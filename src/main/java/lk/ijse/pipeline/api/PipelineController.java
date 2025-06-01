@@ -23,4 +23,9 @@ public class PipelineController {
     public String get() {
         return "Pipeline working";
     }
+
+    @GetMapping("/test")
+    public String getTest() {
+        return "Pipeline test working";
+    }
 }
