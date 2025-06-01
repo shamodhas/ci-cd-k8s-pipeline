@@ -59,9 +59,9 @@ project/
         └── ci-cd-pipeline.yml
 ```
 
-#### k8s/deployment.yaml [deployment.yaml](https://github.com/shamodhas/k8s-simple-deployment/blob/main/deployment.yaml)
-#### k8s/service.yaml [deployment.yaml](https://github.com/shamodhas/k8s-simple-deployment/blob/main/deployment.yaml)
-#### .github/workflows/ci-cd-pipeline.yml [deployment.yaml](https://github.com/shamodhas/k8s-simple-deployment/blob/main/deployment.yaml)
+#### k8s/deployment.yaml [deployment.yaml](https://github.com/shamodhas/ci-cd-k8s-pipeline/blob/main/k8s/deployment.yaml)
+#### k8s/service.yaml [service.yaml](https://github.com/shamodhas/ci-cd-k8s-pipeline/blob/main/k8s/service.yaml)
+#### .github/workflows/ci-cd-pipeline.yml [ci-cd-pipeline.yml](https://github.com/shamodhas/ci-cd-k8s-pipeline/blob/main/.github/workflows/ci-cd-pipeline.yml)
 
 ### 2. Add GitHub Secrets (GitHub)
 
