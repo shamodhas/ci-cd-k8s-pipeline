@@ -15,19 +15,7 @@ spec:
         app: springboot-app
     spec:
       containers:
-      - name: springboot-app
-        image: shamodha/springboot-app:${IMAGE_TAG}
-        ports:
-        - containerPort: 8080
-        readinessProbe:
-          httpGet:
-            path: /actuator/health
-            port: 8080
-          initialDelaySeconds: 10
-          periodSeconds: 5
-        livenessProbe:
-          httpGet:
-            path: /actuator/health
-            port: 8080
-          initialDelaySeconds: 15
-          periodSeconds: 20
+        - name: springboot-app
+          image: shamodha/springboot-app:${IMAGE_TAG}
+          ports:
+            - containerPort: 8080

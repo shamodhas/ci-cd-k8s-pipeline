@@ -18,8 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/app")
 public class PipelineController {
+
     @GetMapping("/pipeline")
     public String get() {
         return "Pipeline working";
+    }
+
+    @GetMapping("/test")
+    public String getTest() {
+        return "Pipeline test working";
     }
 }
