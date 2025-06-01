@@ -50,8 +50,13 @@ jobs:
           chmod 600 ~/.kube/config
       #        echo "${{ secrets.KUBECONFIG }}" > ~/.kube/config
       #        chmod 600 ~/.kube/config
+      - name: Debug Kubernetes Connection
+        run: |
+          kubectl cluster-info
+          kubectl get nodes
 
       - name: Deploy to Kubernetes
         run: |
+          kubectl apply -f k8s/
           kubectl set image deployment/springboot-app springboot-app=$IMAGE_NAME:$IMAGE_TAG
           kubectl rollout status deployment/springboot-app
