@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - deploy
+      - main
 
 env:
   IMAGE_NAME: your-dockerhub-username/springboot-app
