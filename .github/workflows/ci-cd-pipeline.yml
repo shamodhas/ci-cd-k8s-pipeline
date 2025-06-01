@@ -6,7 +6,7 @@ on:
       - deploy
 
 env:
-  IMAGE_NAME: your-dockerhub-username/springboot-app
+  IMAGE_NAME: shamodha/springboot-app
 
 jobs:
   build-and-deploy:
